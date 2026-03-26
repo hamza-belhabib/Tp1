@@ -1,0 +1,23 @@
+package ex01;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Entrez un nombre : ");
+        int n = sc.nextInt();
+
+        if (n > 0) {
+            System.out.println("Positif");
+        } else if (n < 0) {
+            System.out.println("Négatif");
+        } else {
+            System.out.println("Nul");
+        }
+
+        sc.close();
+    }
+}
